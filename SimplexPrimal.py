@@ -12,6 +12,10 @@ model += 4*x1 + 5*x2
 model += x1 + 4*x2 >= 5, "Restricao_1"
 model += 3*x1 + 2*x2 >= 4, "Restricao_2"
 
+
+# EXPORTAR
+model.writeLP("SimplexPrimal.lp")
+
 model.solve(PULP_CBC_CMD(msg=False))
 
 print("\nSTATUS")
