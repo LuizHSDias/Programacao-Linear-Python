@@ -64,6 +64,7 @@ SimplexDual.py
 ```
 
 O problema dual foi modelado a partir do primal utilizando dualidade da Programação Linear.
+
 ---
 
 # 3. Programação Linear Inteira (PLI)
@@ -101,7 +102,7 @@ O CBC pode utilizar algoritmos como:
 
 ---
 
-# Instalação
+## Instalação
 
 Clone o repositório:
 
@@ -118,10 +119,14 @@ cd Programacao-Linear-Python
 Instale as dependências:
 
 ```bash
-py -m pip install pulp
+pip install -r requirements.txt
 ```
 
----
+Caso o comando `pip` não funcione no Windows:
+
+```bash
+py -m pip install -r requirements.txt
+```
 
 # Executando os Projetos
 
