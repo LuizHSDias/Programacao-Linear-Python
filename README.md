@@ -29,11 +29,10 @@ O projeto apresenta exemplos práticos de:
 ```text
 Programacao-Linear-Python/
 │
-├── primal.py
-├── dual.py
-├── pli_branch_bound.py
+├── SimplexPrimal.py
+├── SimplexDual.py
+├── PLInteira.py
 ├── README.md
-└── requirements.txt
 ```
 
 ---
@@ -43,24 +42,10 @@ Programacao-Linear-Python/
 Arquivo:
 
 ```text
-primal.py
+SimplexPrimal.py
 ```
 
 O problema primal realiza a minimização da função objetivo:
-
-\[
-Z = 4x_1 + 5x_2
-\]
-
-Sujeito às restrições:
-
-\[
-x_1 + 4x_2 \ge 5
-\]
-
-\[
-3x_1 + 2x_2 \ge 4
-\]
 
 O modelo também apresenta:
 
@@ -75,27 +60,10 @@ O modelo também apresenta:
 Arquivo:
 
 ```text
-dual.py
+SimplexDual.py
 ```
 
 O problema dual foi modelado a partir do primal utilizando dualidade da Programação Linear.
-
-Função objetivo:
-
-\[
-W = 5y_1 + 4y_2
-\]
-
-Sujeito às restrições:
-
-\[
-y_1 + 3y_2 \le 4
-\]
-
-\[
-4y_1 + 2y_2 \le 5
-\]
-
 ---
 
 # 3. Programação Linear Inteira (PLI)
@@ -103,7 +71,7 @@ y_1 + 3y_2 \le 4
 Arquivo:
 
 ```text
-pli_branch_bound.py
+PLInteira.py
 ```
 
 O problema de transporte da companhia aérea foi modelado utilizando:
@@ -160,19 +128,19 @@ pip install -r requirements.txt
 ## Problema Primal
 
 ```bash
-python primal.py
+python SimplexPrimal.py
 ```
 
 ## Problema Dual
 
 ```bash
-python dual.py
+python SimplexDual.py
 ```
 
 ## PLI - Branch and Bound
 
 ```bash
-python pli_branch_bound.py
+python PLInteira.py
 ```
 
 ---
@@ -191,5 +159,5 @@ python pli_branch_bound.py
 ---
 
 # Autor
-
+João Carlos Ferreira Martins
 Luiz Henrique Dias
