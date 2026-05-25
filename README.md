@@ -118,7 +118,7 @@ cd Programacao-Linear-Python
 Instale as dependências:
 
 ```bash
-pip install -r requirements.txt
+py -m pip install pulp
 ```
 
 ---
@@ -159,5 +159,5 @@ python PLInteira.py
 ---
 
 # Autor
-João Carlos Ferreira Martins
-Luiz Henrique Dias
+- João Carlos Ferreira Martins
+- Luiz Henrique Dias
